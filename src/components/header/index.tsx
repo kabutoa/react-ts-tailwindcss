@@ -5,7 +5,12 @@ function Header({ className, children, ...rest }: Props): JSX.Element {
   const navigate = useNavigate()
 
   const handleNavigation = (path: string) => {
-    navigate(path)
+    const id = 1
+    navigate(`${path}?id=${id}`, {
+      state: {
+        stateKey: 'stateData'
+      }
+    })
   }
 
   return (
