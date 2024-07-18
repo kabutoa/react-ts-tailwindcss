@@ -16,17 +16,17 @@ export default defineConfig(({ mode }) => {
         '@': fileURLToPath(new URL('./src', import.meta.url))
       }
     },
-    plugins: [react()]
+    plugins: [react()],
+    preview: {
+      port: 8888,
+      host: '0.0.0.0'
+    }
   }
 
   if (!isProd) {
     return mergeConfig(baseConfig, {
       server: {
         port: 8080,
-        host: '0.0.0.0'
-      },
-      preview: {
-        port: 8888,
         host: '0.0.0.0'
       }
     })
