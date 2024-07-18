@@ -4,7 +4,7 @@ import { Props } from '@/types'
 const pageVariants = {
   initial: {
     opacity: 0,
-    x: 50
+    x: 20
   },
   in: {
     opacity: 1,
@@ -12,7 +12,7 @@ const pageVariants = {
   },
   out: {
     opacity: 0,
-    x: -50
+    x: -20
   }
 }
 

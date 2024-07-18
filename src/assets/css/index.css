@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-gray-200 font-sans leading-normal tracking-normal text-gray-900;
+}
+
+#root {
+  @apply min-h-screen w-screen overflow-hidden;
+}
